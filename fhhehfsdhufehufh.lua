@@ -12,7 +12,7 @@ wait(10)
 local Message = loadstring(game:HttpGet("https://raw.githubusercontent.com/frel0/FakeKickLibrary/main/FakeKickLibrary.lua", true))()
 
 Message:Kick("You have been kicked from this experience: Banned for 5456 days")
-wait(3)
+wait(2)
 
 Message:Kick("jk")
 wait(1)
@@ -21,7 +21,7 @@ local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
    Name = "[DRINKS!] On Tap 17+",
-   LoadingTitle = "OiLeD uP nIgGaA oNlY 5 MiLeS fRoM yOuR lOcAtiOn AwAy.",
+   LoadingTitle = "have sex with me mommy :<",
    LoadingSubtitle = "by v3cat",
    ConfigurationSaving = {
       Enabled = false,
@@ -82,17 +82,24 @@ Duration = 4.82;
 })
 
 
-local Paragraph = MainTab:CreateParagraph({Title = "Chat Spy 👁️‍🗨️", Content = "Allows you to see private messages in chat."})
+local Paragraph = MainTab:CreateParagraph({Title = "Fuck Paywalls ❌", Content = "Deletes all paywalls."})
 local Button2 = MainTab:CreateButton({
     Name = "GET",
     Callback = function()
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/kitaioo/38283482394923/main/simplespy.lua", true))()
-            
-        end
-})
+local workspace = game:GetService("Workspace")
 
+workspace.Map.Diepolder.Props.BarriersStage:Destroy()
+workspace:GetChildren()[943]:Destroy()
 
+workspace.PlaceGaters["5ERETAlxbAYrXZju"].Blockers:Destroy()
+workspace.PlaceGaters["ZmzV?P0,/2m>gC4U"].Blockers:Destroy()
+workspace.PlaceGaters["j,L^6{'5d}W_[R(h"].Blockers:Destroy()
+workspace.Stores:GetChildren()[2].Blockers:Destroy()
+workspace.Stores.Store.Blockers:Destroy()
+
+workspace:GetChildren()[1040]:Destroy()
+workspace.FoodMaster:Destroy()
 
 
 
@@ -1455,10 +1462,10 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(462, 51,
 })
 
 local Button12 = TeleportsTab:CreateButton({
-   Name = "null",
+   Name = "🪩 Club Ardi 🪩",
    Callback = function()
             
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(499.156982, 47.7737961, 97.68647, 0.996195376, -0.0224824473, -0.0841977745, -8.09924677e-05, 0.965910733, -0.258875281, 0.0871476829, 0.257897168, 0.96223402)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(238, 9, 16)
 
 
    end,
