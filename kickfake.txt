@@ -167,7 +167,7 @@ return Message
 end
 
 function Message:Crash(msg)
-messagebox(msg, "Roblox Crash", 0)
+messagebox(msg, "R.I.P TO UR PC BITCH AHAHHAHAAHAHH", 0)
 return Message
 end
 
