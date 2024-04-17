@@ -167,7 +167,7 @@ return Message
 end
 
 function Message:Crash(msg)
-messagebox(msg, "R.I.P TO UR PC BITCH AHAHHAHAAHAHH", 0)
+messagebox(msg, "Just joking.. enjoy the script <3", 0)
 return Message
 end
 
