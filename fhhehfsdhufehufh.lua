@@ -84,7 +84,7 @@ Duration = 4.82;
 
 local Paragraph = MainTab:CreateParagraph({Title = "Fuck Paywalls ❌", Content = "Deletes all paywalls."})
 local Button2 = MainTab:CreateButton({
-    Name = "GET",
+    Name = "Get",
     Callback = function()
             
 local workspace = game:GetService("Workspace")
@@ -199,7 +199,7 @@ deleteAllTruckBarriers()
 end,
 })
 
-        
+local Paragraph = MainTab:CreateParagraph({Title = "Punch Harder", Content = "Multiplies Punches"})        
 
 local isToggling = false
 
@@ -223,6 +223,24 @@ local Toggle = MainTab:CreateToggle({
         end
     end,
 })
+
+local Paragraph = MainTab:CreateParagraph({Title = "Kill all", Content = "in development"})  
+local Button3 = MainTab:CreateButton({
+    Name = "Get",
+    Callback = function()
+
+local Message = loadstring(game:HttpGet("https://raw.githubusercontent.com/kitaioo/38283482394923/main/kickfake.txt", true))()
+
+Message:Crash("Im developing bro")
+Message:Crash("Nigga")
+
+local Message = loadstring(game:HttpGet("https://raw.githubusercontent.com/frel0/FakeKickLibrary/main/FakeKickLibrary.lua", true))()
+Message:Crash("An unexpected error occured and Roblox needs to quit. Were sorry!")
+Message:Crash("An unexpected error occured and Roblox needs to quit. Were sorry!")
+            
+        end
+})
+
 
 
 local PurchaceTab = Window:CreateTab("Items", nil) -- Title, Image
