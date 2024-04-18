@@ -1,13 +1,3 @@
-local discordInviter = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Discord%20Inviter/Source.lua"))()
-
----====== Display invite prompt ======---
-discordInviter.Prompt({
-    name = "On Tap! HUB",
-    invite = "https://discord.gg/xekyDMjfzj"
-})
-
-wait(10)
-
 
 local Message = loadstring(game:HttpGet("https://raw.githubusercontent.com/frel0/FakeKickLibrary/main/FakeKickLibrary.lua", true))()
 
