@@ -189,6 +189,17 @@ deleteAllTruckBarriers()
 end,
 })
 
+
+local Paragraph = MainTab:CreateParagraph({Title = "Best Fucking Chat Bypasser 😵", Content = "!USE AC Bypasser!"})  
+local Button3 = MainTab:CreateButton({
+    Name = "Get",
+    Callback = function()
+
+local Message = loadstring(game:HttpGet("https://raw.githubusercontent.com/Clickgameplay/no-tag-script/main/.NoTagScript"))()
+            
+        end
+})
+
 local Paragraph = MainTab:CreateParagraph({Title = "Punch Harder", Content = "Multiplies Punches"})        
 
 local isToggling = false
@@ -214,16 +225,6 @@ local Toggle = MainTab:CreateToggle({
     end,
 })
 
-
-local Paragraph = MainTab:CreateParagraph({Title = "Best Fucking Chat Bypasser", Content = "BYPASSES EVERYTHING YOU SAY"})  
-local Button3 = MainTab:CreateButton({
-    Name = "Get",
-    Callback = function()
-
-local Message = loadstring(game:HttpGet("https://raw.githubusercontent.com/Clickgameplay/no-tag-script/main/.NoTagScript"))()
-            
-        end
-})
 
 
 local Paragraph = MainTab:CreateParagraph({Title = "Kill all", Content = "in development"})  
