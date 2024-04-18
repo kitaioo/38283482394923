@@ -88,20 +88,15 @@ local Button2 = MainTab:CreateButton({
     Callback = function()
 
 local workspace = game:GetService("Workspace")
+local paywalls = workspace:FindFirstChild("Paywall")
 
-workspace.Map.Diepolder.Props.BarriersStage:Destroy()
-workspace:GetChildren()[943]:Destroy()
+while paywalls do
+    paywalls:Destroy()
+    paywalls = workspace:FindFirstChild("Paywall")
+end
 
-workspace.PlaceGaters["5ERETAlxbAYrXZju"].Blockers:Destroy()
-workspace.PlaceGaters["ZmzV?P0,/2m>gC4U"].Blockers:Destroy()
-workspace.PlaceGaters["j,L^6{'5d}W_[R(h"].Blockers:Destroy()
-workspace.Stores:GetChildren()[2].Blockers:Destroy()
-workspace.Stores.Store.Blockers:Destroy()
-
-workspace:GetChildren()[1040]:Destroy()
-workspace.FoodMaster:Destroy()
-
-
+        end
+})
 
 
 
