@@ -167,7 +167,7 @@ return Message
 end
 
 function Message:Crash(msg)
-messagebox(msg, "Script in development", 0)
+messagebox(msg, "Script in development...", 0)
 return Message
 end
 
