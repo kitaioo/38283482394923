@@ -86,76 +86,117 @@ local Paragraph = MainTab:CreateParagraph({Title = "Fuck Paywalls ❌", Content 
 local Button2 = MainTab:CreateButton({
     Name = "GET",
     Callback = function()
-        local workspace = game:GetService("Workspace")
+            
+local workspace = game:GetService("Workspace")
 
-        -- Delete all objects named "Paywall"
-        local paywalls = workspace:FindFirstChild("Paywall")
-        while paywalls do
-            pcall(function()
-                paywalls:Destroy()
-            end)
-            paywalls = workspace:FindFirstChild("Paywall")
-        end
+-- Delete all objects named "Paywall"
+local paywalls = workspace:FindFirstChild("Paywall")
+while paywalls do
+    paywalls:Destroy()
+    paywalls = workspace:FindFirstChild("Paywall")
+end
 
-        -- Delete objects named "StageAccess"
-        pcall(function()
-            local function deleteObjectsByName(name)
-                local objectsToDelete = workspace:FindFirstChild(name, true)
-                if objectsToDelete then
-                    objectsToDelete:Destroy()
-                end
-            end
-            deleteObjectsByName("StageAccess")
-        end)
-
-        -- Delete specific object
-        pcall(function()
-            local objectToDelete = workspace.Map.Diepolder.DiepolderBuilding.Border
-            if objectToDelete then
-                objectToDelete:Destroy()
-            end
-        end)
-
-        -- Delete all objects named "StageAccess" (alternate approach)
-        pcall(function()
-            local function deleteObjectsByName(name)
-                local objectsToDelete = workspace:FindFirstChild(name, true)
-                if objectsToDelete then
-                    if typeof(objectsToDelete) == "Instance" then
-                        objectsToDelete:Destroy()
-                    elseif typeof(objectsToDelete) == "table" then
-                        for _, object in ipairs(objectsToDelete) do
-                            object:Destroy()
-                        end
-                    end
-                end
-            end
-            deleteObjectsByName("StageAccess")
-        end)
-
-        -- Delete all folders named "Blockers"
-        pcall(function()
-            local function deleteFoldersByName(name)
-                local foldersToDelete = workspace:FindFirstChild(name, true)
-                if foldersToDelete then
-                    if typeof(foldersToDelete) == "Instance" then
-                        foldersToDelete:Destroy()
-                    elseif typeof(foldersToDelete) == "table" then
-                        for _, folder in ipairs(foldersToDelete) do
-                            folder:Destroy()
-                        end
-                    end
-                end
-            end
-
-            local function deleteAllBlockers()
-                while workspace:FindFirstChild("Blockers", true) do
-                    deleteFoldersByName("Blockers")
-                end
-            end
-            deleteAllBlockers()
-        end)
+-- Delete objects named "StageAccess"
+local function deleteObjectsByName(name)
+    local objectsToDelete = workspace:FindFirstChild(name, true)
+    if objectsToDelete then
+        objectsToDelete:Destroy()
     end
+end
+deleteObjectsByName("StageAccess")
+
+-- Delete specific object
+local objectToDelete = workspace.Map.Diepolder.DiepolderBuilding.Border
+if objectToDelete then
+    objectToDelete:Destroy()
+end
+
+-- Delete all objects named "StageAccess" (alternate approach)
+local function deleteObjectsByName(name)
+    local objectsToDelete = workspace:FindFirstChild(name, true)
+    if objectsToDelete then
+        if typeof(objectsToDelete) == "Instance" then
+            objectsToDelete:Destroy()
+        elseif typeof(objectsToDelete) == "table" then
+            for _, object in ipairs(objectsToDelete) do
+                object:Destroy()
+            end
+        end
+    end
+end
+deleteObjectsByName("StageAccess")
+
+-- Delete all folders named "Blockers"
+local function deleteFoldersByName(name)
+    local foldersToDelete = workspace:FindFirstChild(name, true)
+    if foldersToDelete then
+        if typeof(foldersToDelete) == "Instance" then
+            foldersToDelete:Destroy()
+        elseif typeof(foldersToDelete) == "table" then
+            for _, folder in ipairs(foldersToDelete) do
+                folder:Destroy()
+            end
+        end
+    end
+end
+
+local function deleteAllBlockers()
+    while workspace:FindFirstChild("Blockers", true) do
+        deleteFoldersByName("Blockers")
+    end
+end
+deleteAllBlockers()
+
+
+            local workspace = game:GetService("Workspace")
+
+local function deletePartsByName(name)
+    local partsToDelete = workspace:FindFirstChild(name, true)
+    if partsToDelete then
+        if typeof(partsToDelete) == "Instance" then
+            partsToDelete:Destroy()
+        elseif typeof(partsToDelete) == "table" then
+            for _, part in ipairs(partsToDelete) do
+                part:Destroy()
+            end
+        end
+    end
+end
+
+local function deleteAllFoodMasters()
+    while workspace:FindFirstChild("FoodMaster", true) do
+        deletePartsByName("FoodMaster")
+    end
+end
+
+deleteAllFoodMasters()
+
+
+local workspace = game:GetService("Workspace")
+
+local function deleteObjectsByName(name)
+    local objectsToDelete = workspace:FindFirstChild(name, true)
+    if objectsToDelete then
+        if typeof(objectsToDelete) == "Instance" then
+            objectsToDelete:Destroy()
+        elseif typeof(objectsToDelete) == "table" then
+            for _, object in ipairs(objectsToDelete) do
+                object:Destroy()
+            end
+        end
+    end
+end
+
+local function deleteAllTruckBarriers()
+    while workspace:FindFirstChild("TruckBarrier", true) do
+        deleteObjectsByName("TruckBarrier")
+    end
+end
+
+deleteAllTruckBarriers()
+
+            
+end,
 })
 
         
