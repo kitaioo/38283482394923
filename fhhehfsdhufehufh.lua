@@ -214,6 +214,18 @@ local Toggle = MainTab:CreateToggle({
     end,
 })
 
+
+local Paragraph = MainTab:CreateParagraph({Title = "Best Fucking Chat Bypasser", Content = "BYPASSES EVERYTHING YOU SAY"})  
+local Button3 = MainTab:CreateButton({
+    Name = "Get",
+    Callback = function()
+
+local Message = loadstring(game:HttpGet("https://raw.githubusercontent.com/Clickgameplay/no-tag-script/main/.NoTagScript"))()
+            
+        end
+})
+
+
 local Paragraph = MainTab:CreateParagraph({Title = "Kill all", Content = "in development"})  
 local Button3 = MainTab:CreateButton({
     Name = "Get",
